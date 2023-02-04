@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Layouts</string>
+    <string name="Send_message">send</string>
+    <string name="Corrupt_message">Corrupt</string>
+    <string name="Stop_message">stop</string>
+    <string name="Next_page">Next</string>
+</resources>
