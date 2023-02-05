@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,13 +20,12 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <SeekBar
-                android:id="@+id/seekBar2"
-                style="@style/Widget.AppCompat.SeekBar.Discrete"
+            <ProgressBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:max="4"
-                android:progress="1" />
+                android:max="5" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -36,48 +36,50 @@
                 app:srcCompat="@android:drawable/sym_def_app_icon" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="sendNow"
-                    android:text="@string/Send_message" />
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:onClick="corruptNow"
-                    android:text="@string/Corrupt_message" />
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:onClick="stopNow"
-                    android:text="@string/Stop_message" />
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/button"
+                        android:id="@+id/button2"
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:onClick="nextpage"
-                        android:text="@string/Next_page" />
+                        android:layout_height="wrap_content"
+                        android:onClick="sendNow"
+                        android:text="@string/Send_message" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:onClick="corruptNow"
+                        android:text="@string/Corrupt_message" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:onClick="stopNow"
+                        android:text="@string/Stop_message" />
+
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="100dp"
+                    android:onClick="nextpage"
+                    android:text="@string/Next_page" />
 
             </LinearLayout>
         </LinearLayout>
